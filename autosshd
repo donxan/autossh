@@ -1,4 +1,5 @@
 #!/bin/bash
+## written by Aiker.
 #
 #chkconfig: 2345 80 90
 #
