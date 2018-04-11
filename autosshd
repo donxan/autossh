@@ -33,7 +33,7 @@ start() {
         fi
  
         # 5679监视端口         12246在R_host上起的端口     22本地端口
-        $autossh -M 5679 -NfR 12246:localhost:22 root@$R_host -i /home/root/.ssh/id_rsa  -o "ServerAliveInterval 300" -o "ServerAliveCountMax 5"
+        $autossh -M 5679 -NfR dport:localhost:22 root@$R_host -i /home/root/.ssh/id_rsa  -o "ServerAliveInterval 300" -o "ServerAliveCountMax 5"
  
         if [ $? -eq 0 ]; then
            echo "  >>> Start autossh sucesses..."
